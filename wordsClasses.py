@@ -1,3 +1,6 @@
+#I'm not certain what super() is doing in the subclasses
+
+
 class Word(object):
     ''' This is the main word object. Contains key attributes and methods
 of all types of words (verbs, nouns, adjectives,...)'''
@@ -41,7 +44,7 @@ of all types of words (verbs, nouns, adjectives,...)'''
             newContext = input("whats your new context sentence? \n")
         self.context = newContext
         
-  class Verb(Word):
+class Verb(Word):
     def __init__(self, dutch, english, memTrick="", context="", tense=''):
         super(Word, self).__init__()
         self.dutch = dutch
