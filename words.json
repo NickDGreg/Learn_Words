@@ -1,1 +1,47 @@
-
+{
+  "words": [
+    {
+      "verbs": [
+        {
+          "dutch": "tonen",
+          "context": "",
+          "english": "to show",
+          "tense": "present",
+          "memTrick": "the sharp tones show the whale is distressed"
+        }
+      ],
+      "connectives": [
+        {
+          "wordOrder": "normal",
+          "dutch": "hoewel",
+          "memTrick": "although, how well it went depends on your view",
+          "english": "although",
+          "context": "Hoewel ik ging naar de winkel, ik heb geen eten"
+        }
+      ],
+      "nouns": [
+        {
+          "dutch": "nederigheid",
+          "context": "",
+          "memTrick": "",
+          "category": "",
+          "english": "humility"
+        },
+        {
+          "dutch": "opmerking",
+          "context": "",
+          "memTrick": "",
+          "category": "",
+          "english": "remark"
+        },
+        {
+          "dutch": "orzaak",
+          "memTrick": "What caused the boat to sink? The oar sack was too heavy",
+          "category": "abstract concept",
+          "context": "wat is de orzaak van de oorlog?",
+          "english": "cause"
+        }
+      ]
+    }
+  ]
+}
