@@ -33,8 +33,8 @@ what type of word it is that was created
 '''
     typeWord = 0
     #this while loop doesnt work at the moment
-    while(typeWord != 1 and typeWord != 2 and typeWord !=3):
-        typeWord = int(input('What sort of word is it? type 1 for verb, 2 for noun, 3 for connective \n'))
+    while(typeWord != 'verb' and typeWord != 'noun' and typeWord != 'connective'):
+        typeWord = input('What sort of word is it? type 1 for verb, 2 for noun, 3 for connective \n')
         
     dutch = ''
     while dutch == '':
@@ -44,21 +44,26 @@ what type of word it is that was created
     while english == '':
         english = input('what is the new word in english? \n')
 
-    memTrick = input('A memory trick really helps. Type one: \n')
-    context = input('A context sentence is a good memory tool. Type one: \n')
+    memTrick = ''
+    while memTrick == '':
+        memTrick = input('A memory trick really helps. Type one: \n')
 
-    if typeWord == 1:
+    context = ''
+    while context == '':
+        context = input('A context sentence is a good memory tool. Type one: \n')
+
+    if typeWord == 'verb':
         tense = input('what tense is this version of the word \n')
         return(Verb(dutch, english, memTrick, context, tense), 'verbs')
 
-    if typeWord == 2:
+    if typeWord == 'noun':
         print('These are the current categories: \n')
 ##        for cat in categories:
 ##            print(cat)
         category = input('Whats the category of this word? \n')
         return(Noun(dutch, english, memTrick, context, category), 'nouns')
 
-    if typeWord == 3:
+    if typeWord == 'connective':
         print('The word order after the connective is important')
         print(' e.g. verb pronoun ... or pronoun ... verb?')
         wordOrder = input('Whats the word order after this connective? \n')
@@ -80,14 +85,14 @@ def addNewWord():
 
 #addNewWord()
 
-
+'''
 #just checking it worked
 f = open('words.json')
 
-'''
+
 its possible to only pull the correct values rather than the whole file but i think
 taking the whole file in a dict form then searching is faster
-'''
+
 ##for i in f:
 ##    print(i)
 ##    print('*'*20)
@@ -98,3 +103,4 @@ myWords = json.load(f)
 print(json.dumps(myWords, indent=2))
 f.close()
     
+'''
